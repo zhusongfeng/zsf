@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>酒</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script>
+        ! function(g, d, t, e, v, n, s) {
+            if (g.gdt) return;
+            v = g.gdt = function() {
+                v.tk ? v.tk.apply(v, arguments) : v.queue.push(arguments)
+            };
+            v.sv = '1.0';
+            v.bt = 0;
+            v.queue = [];
+            n = d.createElement(t);
+            n.async = !0;
+            n.src = e;
+            s = d.getElementsByTagName(t)[0];
+            s.parentNode.insertBefore(n, s);
+            console.log(g, d, t, e, v, n, s)
+        }(window, document, 'script', '//qzonestyle.gtimg.cn/qzone/biz/gdt/dmp/user-action/gdtevent.min.js');
+        gdt('init', '1107928801');
+        gdt('track', 'PAGE_VIEW');
+    </script>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <img src="image/a.webp" alt="">
+        <!--  长按复制内容  -->
+        <div class="duplicate-content">
+            <p class="text">↓↓现在长按复制，去微信添加 ↓↓</p>
+            <p class="tag" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()">
+                <copy class="code_name">158784512</copy>
+            </p>
+            <p class="info">让每一位爱酒朋友真正懂得酱酒的魅力喝好酒，选远明手工壹号</p>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/vue.min.js"></script>-->
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    $('.code_name').on('copy', function() {
+        gdt('track', 'RESERVATION', {
+            'key1': 'value1',
+            'key2': 'value2'
+        });
+        window.location.href = "weixin://";
+    });
+</script>
+
+</html>
