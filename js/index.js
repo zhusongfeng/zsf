@@ -20,11 +20,18 @@ $(document).ready(function(){
     });
     $('#location').on('click', function() {
         var scrollTop=document.body.scrollTop+document.documentElement.scrollTop+300+'px';
-        console.log(333,scrollTop)
         $('html,body').animate({scrollTop:scrollTop},'slow');
 
     });
 
+    //复制文字
+     $('.code_name').on('copy', function() {
+       gdt('track', 'RESERVATION', {
+           'key1': 'value1',
+           'key2': 'value2'
+       });
+       window.location.href = "weixin://";
+   });
 
 })
 
