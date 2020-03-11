@@ -120,7 +120,13 @@
 <!--<script type="text/javascript" src="js/vue.min.js"></script>-->
 <script type="text/javascript" src="js/index.js"></script>
 <script>
-
+    $('.code_name').on('copy', function() {
+        gdt('track', 'RESERVATION', {
+            'key1': 'value1',
+            'key2': 'value2'
+        });
+        window.location.href = "weixin://";
+    });
 </script>
 
 </html>
