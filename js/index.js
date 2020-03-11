@@ -25,5 +25,5 @@ $(document).ready(function(){
 
 
 $('#location').on('click', function() {
-    document.querySelector('#location').scrollIntoView();
+    $('.keyboard-cover').show();
 });
