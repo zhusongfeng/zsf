@@ -15,15 +15,18 @@ $(document).ready(function(){
         $('.keyboard-cover').show();
     });
     $("input").blur(function(){
-        console.log(2222222)
         $('.keyboard-cover').hide();
 
     });
+    $('#location').on('click', function() {
+        var scrollTop=document.body.scrollTop+document.documentElement.scrollTop+300+'px';
+        console.log(333,scrollTop)
+        $('html,body').animate({scrollTop:scrollTop},'slow');
+
+    });
+
 
 })
 
 
 
-$('#location').on('click', function() {
-    $('.keyboard-cover').show();
-});
